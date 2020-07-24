@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                 Menu.Dialog -> Intent(this, DialogActivity::class.java)
                 Menu.PopupWindow -> Intent(this, DialogActivity::class.java)
                 Menu.Toast -> Intent(this, ToastActivity::class.java)
-                Menu.SnackBar -> Intent(this, DialogActivity::class.java)
+                Menu.SnackBar -> Intent(this, SnackBarActivity::class.java)
                 Menu.Menu -> Intent(this, DialogActivity::class.java)
             }
 
