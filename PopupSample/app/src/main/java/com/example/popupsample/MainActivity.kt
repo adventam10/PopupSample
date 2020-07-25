@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             val text = adapter.getItem(position)
             val intent = when (Menu.valueOf(text!!)) {
                 Menu.Dialog -> Intent(this, DialogActivity::class.java)
-                Menu.PopupWindow -> Intent(this, DialogActivity::class.java)
+                Menu.PopupWindow -> Intent(this, PopupWindowActivity::class.java)
                 Menu.Toast -> Intent(this, ToastActivity::class.java)
                 Menu.SnackBar -> Intent(this, SnackBarActivity::class.java)
                 Menu.Menu -> Intent(this, MenuActivity::class.java)
