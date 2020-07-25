@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val listView = findViewById<ListView>(R.id.list)
-        val list = listOf("Dialog", "PopupWindow", "Toast", "SnackBar", "Menu")
+        val list = listOf("Dialog", "PopupWindow", "ListPopupWindow", "Toast", "SnackBar", "Menu")
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list)
         listView.adapter = adapter
 
@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             val intent = when (Menu.valueOf(text!!)) {
                 Menu.Dialog -> Intent(this, DialogActivity::class.java)
                 Menu.PopupWindow -> Intent(this, PopupWindowActivity::class.java)
+                Menu.ListPopupWindow -> Intent(this, ListPopupWindowActivity::class.java)
                 Menu.Toast -> Intent(this, ToastActivity::class.java)
                 Menu.SnackBar -> Intent(this, SnackBarActivity::class.java)
                 Menu.Menu -> Intent(this, MenuActivity::class.java)
@@ -33,5 +34,5 @@ class MainActivity : AppCompatActivity() {
 }
 
 enum class Menu {
-    Dialog, PopupWindow, Toast, SnackBar, Menu;
+    Dialog, PopupWindow, ListPopupWindow, Toast, SnackBar, Menu;
 }
