@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/section1"
+        android:title="セクション１" >
+        <menu>
+            <item android:id="@+id/section1_menu1"
+                android:title="メニュー１" />
+            <item android:id="@+id/section1_menu2"
+                android:title="メニュー２" />
+        </menu>
+    </item>
+    <item android:id="@+id/section2"
+        android:title="セクション２" >
+        <menu>
+            <item android:id="@+id/section2_menu1"
+                android:title="メニュー３" />
+            <item android:id="@+id/section2_menu2"
+                android:title="メニュー４" />
+        </menu>
+    </item>
+    <item android:id="@+id/section3"
+        android:title="セクション３" />
+</menu>

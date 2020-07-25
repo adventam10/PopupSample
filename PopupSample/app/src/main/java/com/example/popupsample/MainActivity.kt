@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
                 Menu.PopupWindow -> Intent(this, DialogActivity::class.java)
                 Menu.Toast -> Intent(this, ToastActivity::class.java)
                 Menu.SnackBar -> Intent(this, SnackBarActivity::class.java)
-                Menu.Menu -> Intent(this, DialogActivity::class.java)
+                Menu.Menu -> Intent(this, MenuActivity::class.java)
             }
 
             startActivity(intent)
