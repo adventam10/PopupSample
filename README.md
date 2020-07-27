@@ -23,7 +23,7 @@
 |![snack_normal](https://user-images.githubusercontent.com/34936885/88590349-8814f200-d095-11ea-8b0a-e5167f6ee3a6.png)|![snack_action](https://user-images.githubusercontent.com/34936885/88590409-a1b63980-d095-11ea-81de-8b18899a7c35.png)|![snack_center](https://user-images.githubusercontent.com/34936885/88590455-b397dc80-d095-11ea-99d7-91ff72eaf6a3.png)|![snack_left](https://user-images.githubusercontent.com/34936885/88590484-c14d6200-d095-11ea-9dce-13c8d9965ba4.png)|![snack_custom](https://user-images.githubusercontent.com/34936885/88590534-daeea980-d095-11ea-9c06-ae998cee6ef7.png)|
 
 ## Dialog
-| パターン１ | パターン2 | パターン3 | パターン4 |
+| Pattern1 | Pattern2 | Pattern3 | Pattern4 |
 | --- | --- | --- | --- |
 |![dialog1](https://user-images.githubusercontent.com/34936885/88599691-57d64f00-d0a7-11ea-8b1b-761ce2ca773a.png)|![dialog2](https://user-images.githubusercontent.com/34936885/88599699-5c9b0300-d0a7-11ea-9d5b-ac7b6ac028e1.png)|![dialog3](https://user-images.githubusercontent.com/34936885/88599773-8ce2a180-d0a7-11ea-88ad-ed9ed3e41b6a.png)|![dialog4](https://user-images.githubusercontent.com/34936885/88599810-a4ba2580-d0a7-11ea-9336-6f7de461f6cf.png)|
 
