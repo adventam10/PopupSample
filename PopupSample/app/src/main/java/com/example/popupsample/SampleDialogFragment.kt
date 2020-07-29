@@ -382,3 +382,42 @@ class CustomDialogFragment : DialogFragment() {
         } ?: throw IllegalStateException("Activity cannot be null")
     }
 }
+
+class CustomProgressDialogFragment : DialogFragment() {
+
+    companion object {
+        private const val ARGUMENTS_TITLE = "ARGUMENTS_TITLE"
+        private const val ARGUMENTS_MESSAGE = "ARGUMENTS_MESSAGE"
+
+        fun newInstance(title: String? = null, message: String? = null): CustomProgressDialogFragment
+                = CustomProgressDialogFragment().apply {
+            isCancelable = false
+            arguments = Bundle().apply {
+                putString(ARGUMENTS_TITLE, title)
+                putString(ARGUMENTS_MESSAGE, message)
+            }
+        }
+    }
+
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        var title: String? = null
+        var message: String? = null
+        arguments?.let {
+            title = it.getString(ARGUMENTS_TITLE)
+            message = it.getString(ARGUMENTS_MESSAGE)
+        }
+        return activity?.let { activity ->
+            val builder = AlertDialog.Builder(activity)
+            val inflater = requireActivity().layoutInflater
+            val view = inflater.inflate(R.layout.custom_progress_dialog, null)
+            builder.setView(view)
+            title?.let {
+                builder.setTitle(it)
+            }
+            message?.let {
+                view.findViewById<TextView>(R.id.message).text = it
+            }
+            return builder.create()
+        } ?: throw IllegalStateException("Activity cannot be null")
+    }
+}

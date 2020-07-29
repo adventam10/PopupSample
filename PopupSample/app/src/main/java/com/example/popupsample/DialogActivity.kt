@@ -1,6 +1,8 @@
 package com.example.popupsample
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -61,6 +63,15 @@ class DialogActivity : AppCompatActivity(), SimpleDialogFragment.SimpleDialogLis
             val dialog = CustomDialogFragment.newInstance("タイトル",
                 "OK", "Cancel", "Neutral")
             dialog.show(supportFragmentManager, "D")
+        }
+
+        findViewById<Button>(R.id.button9).setOnClickListener {
+            val dialog = CustomProgressDialogFragment.newInstance("タイトル", "メッセージ")
+            dialog.show(supportFragmentManager, "D")
+            Handler(Looper.getMainLooper()).postDelayed(Runnable {
+                // ３秒後に非表示
+                dialog.dismiss()
+            }, 3000)
         }
     }
 

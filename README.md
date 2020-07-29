@@ -30,3 +30,9 @@
 | List | Radio | Checkbox | Custom | Activity |
 | --- | --- | --- | --- | --- |
 |![dialog_list](https://user-images.githubusercontent.com/34936885/88599981-1a25f600-d0a8-11ea-8763-d83506a3806f.png)|![dialog_radio](https://user-images.githubusercontent.com/34936885/88599949-024e7200-d0a8-11ea-88b3-674489ff9ca1.png)|![dialog_checkbox](https://user-images.githubusercontent.com/34936885/88599880-daf7a500-d0a7-11ea-9b0c-c7b4683f2e56.png)|![dialog_custom](https://user-images.githubusercontent.com/34936885/88600020-30cc4d00-d0a8-11ea-80ad-238e90fa9e67.png)|![dialog_activity](https://user-images.githubusercontent.com/34936885/88600034-39248800-d0a8-11ea-96a9-d54339914325.png)|
+
+### Progress (Deprecated)
+| Original | Custom |
+| --- | --- |
+|![original](https://user-images.githubusercontent.com/34936885/88864928-62c4e700-d241-11ea-8653-d6c4592f9b67.png)|![custom](https://user-images.githubusercontent.com/34936885/88864944-6bb5b880-d241-11ea-9210-01a26de183a3.png)|
+
